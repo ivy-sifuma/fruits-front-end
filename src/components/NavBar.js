@@ -16,7 +16,7 @@ function NavBar({ user, setUser }) {
       <nav>
         <div>
           <Link className='logo' to='/'>
-            <span className='i-logo'>i</span>Care
+            <span className='i-logo'>Smoothie</span>Fruity
           </Link>
         </div>
         <div>
