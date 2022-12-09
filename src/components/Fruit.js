@@ -11,7 +11,7 @@ function Fruit({ user }) {
   // const [record, setRecord] = useState([]);
   // const deletedId = [record][0].id;
   const allFruits = user.fruits;
-  // const selected = allAppointments.find((x) => x.id === deletedId);
+  // const selected = allFruits.find((x) => x.id === deletedId);
   // const del = [selected][0].id;
   // const delid = (JSON.stringify(del))
   // console.log(delid);
