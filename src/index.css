@@ -110,7 +110,7 @@ nav {
  font-weight: 700;
  /* margin-left: 1rem; */
 }
-.i-logo {
+.fruits-logo {
  color: black;
 }
 .nav-menu {
@@ -138,7 +138,7 @@ nav {
 }
 .home-banner {
  width: 100%;
- background-image: url("./img/image.webp");
+ background-image: url("https://shwetainthekitchen.com/wp-content/uploads/2021/08/Fruit-Salad-with-Condensed-Milk.jpg");
  color: white;
  overflow: hidden;
  background-position: center center;
@@ -195,7 +195,7 @@ nav {
 .home-cont-2-text p {
  font-size: 16px;
 }
-.mother-children-img {
+.smoothie-img {
  width: 100%;
  display: flex;
  margin: auto;
@@ -246,15 +246,15 @@ nav {
  line-height: 36px;
 }
 /* ==HOME== */
-/* ==PATIENT-ME== */
-.patient-me {
+/* ==USER-ME== */
+.user-me {
  width: 70%;
  display: flex;
  flex-direction: column;
  margin: 100px auto;
  justify-content: center;
 }
-.patient-me-table {
+.user-me-table {
  height: auto;
  margin-bottom: 40px;
 }
@@ -267,21 +267,21 @@ td, th {
  border: 1px solid #007786;
  padding: 10px ;
 }
-.patient-me-form {
+.user-me-form {
  margin-top: 40px;
 }
-.patient-me-form {
+.user-me-form {
  
  display: flex;
  align-items: center;
  flex-direction: column;
 }
-#appointment-form{
+#fruit-form{
  display: flex;
  flex-direction: column;
  width: 50vh;
 }
-#appointment-form button:hover {
+#fruit-form button:hover {
  background-color: white;
  color: #007786;
 }
@@ -289,4 +289,4 @@ i {
 	color: #FFCCCB; 
  cursor: pointer;
 };
-/* ==PATIENT-ME== */
+/* ==USER-ME== */
