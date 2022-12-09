@@ -41,7 +41,7 @@ function SignUp({ onLogin }) {
   useEffect(() => {
     fetch('/fruits')
       .then((response) => response.json())
-      .then((data) => setAllFruits(data));
+      
   }, []);
 
   if (success == !null) return <NavLink to='/me' />;

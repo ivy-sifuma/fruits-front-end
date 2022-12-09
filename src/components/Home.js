@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import familyImg from "../img/family.jpg"
-import motherChildren from '../img/mother-children.jpg';
-import momChild from '../img/cpg-community-mom-child-300x217.jpg';
+
 
 function Home() {
   return (
@@ -22,7 +20,7 @@ function Home() {
       </div>
       <div className='home-cont-2'>
         <div className='home-cont-2-img'>
-          <img src={familyImg} alt='Family' />
+          <img src={url} alt='Fruits'/>
         </div>
         <div className='home-cont-2-text'>
           <h1>
@@ -39,9 +37,9 @@ function Home() {
       </div>
       <div className='home-cont-3'>
         <img
-          src={motherChildren}
-          className='mother-children-img'
-          alt='Mother Child'
+          src={url}
+          className='smoothie.jpeg'
+          alt='Smoothie'
         />
         <h1>
           Fruits App helps you not miss on your fav smothie just because you lost that note pad, oopsy! 
@@ -55,7 +53,7 @@ function Home() {
         <br />
       </div>
       <div className='home-cont-4'>
-        <img src={momChild} alt='mom and child' />
+        <img src={url} alt='fruit in basket' />
         <div className='home-cont-4-text'>
           <h1>What are the benefits of drinking smothies?</h1>
           <br />
