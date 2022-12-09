@@ -63,7 +63,7 @@ function Home() {
           Smoothies are thick, creamy beverages usually blended from puréed fruits, vegetables, juices, yogurt, nuts, seeds, and/or dairy or nondairy milk. The most basic smoothie starts with two essential ingredients — a base and a liquid. From there, you can combine ingredients to your liking. {' '}
           </p>
           <p className='home-cont-4-text-p'>
-            Smothies ncreases consumption of fruits and vegetables, Increases fiber intake, Can provide a nutritional balance of fats, protein, carbohydrates, vitamins, and minerals and lastly Helps manage food cravings.
+            Smothies increases consumption of fruits and vegetables, Increases fiber intake, Can provide a nutritional balance of fats, protein, carbohydrates, vitamins, and minerals and lastly Helps manage food cravings.
           </p>
         </div>
 

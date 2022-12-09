@@ -5,11 +5,8 @@ function SignUp({ onLogin }) {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirmation, setPasswordConfirmation] = useState('');
-  const [condition, setCondition] = useState('');
-  const [caregiver, setCaregiver] = useState('');
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [allCaregivers, setAllCaregivers] = useState([]);
   const [success, setSuccess] = useState(null);
 
   function handleSubmit(e) {
@@ -25,8 +22,7 @@ function SignUp({ onLogin }) {
         name,
         password,
         password_confirmation: passwordConfirmation,
-        condition,
-        caregiver_id: caregiver,
+        
       }),
     }).then((r) => {
       setIsLoading(false);
@@ -43,9 +39,9 @@ function SignUp({ onLogin }) {
   }
 
   useEffect(() => {
-    fetch('/caregivers')
+    fetch('/fruits')
       .then((response) => response.json())
-      .then((data) => setAllCaregivers(data));
+      .then((data) => setAllFruits(data));
   }, []);
 
   if (success == !null) return <NavLink to='/me' />;
@@ -78,32 +74,7 @@ function SignUp({ onLogin }) {
           onChange={(e) => setPasswordConfirmation(e.target.value)}
           autoComplete='current-password'
         />
-        <label htmlFor='condition'>Patient's Condition</label>
-        <textarea
-          placeholder="Provide information about patient's condtion.."
-          rows='3'
-          id='bio'
-          value={condition}
-          onChange={(e) => setCondition(e.target.value)}
-        />
-        <label htmlFor='caregiver'>Caregiver</label>
-        {/* ==SELECT== */}
-        <select
-          name='caregiver'
-          // value={caregiver}
-          onChange={(e) => setCaregiver(e.target.value)}
-        >
-          <option className='option' hidden>
-            Select Caregiver
-          </option>
-          {allCaregivers.map((carer) => {
-            return (
-              <option className='option' key={carer.id} value={carer.id}>
-                {carer.name}
-              </option>
-            );
-          })}
-        </select>
+        
         {/* ==SELECT== */}
         <button type='submit'>{isLoading ? 'Loading...' : 'Sign Up'}</button>
         {errors.map((err) => (
