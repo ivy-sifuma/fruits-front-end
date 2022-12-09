@@ -3,48 +3,44 @@ import { Tooltip } from 'react-tooltip';
 
 // DELETE NOT WORKING CORRECTLY
 
-function Appointment({ user }) {
-  const [allPractitioners, setAllPractitioners] = useState([]);
-  const [duration, setDuration] = useState('');
-  const [appointmentType, setAppointmentType] = useState('');
+function Fruit({ user }) {
+  const [allusers, setAllusers] = useState([]);
+  const [fruitType, setFruitType] = useState('');
   const [errors, setErrors] = useState([]);
-  const [practitioner, setPractitioner] = useState('');
-  const [date, setDate] = useState('');
+  
   // const [record, setRecord] = useState([]);
   // const deletedId = [record][0].id;
-  const allAppointments = user.appointments;
+  const allFruits = user.fruits;
   // const selected = allAppointments.find((x) => x.id === deletedId);
   // const del = [selected][0].id;
   // const delid = (JSON.stringify(del))
   // console.log(delid);
 
   useEffect(() => {
-    fetch('/practitioners')
+    fetch('/fruits')
       .then((response) => response.json())
-      .then((data) => setAllPractitioners(data));
+      .then((data) => setAllusers(data));
   }, []);
 
   function handleDelete() {
-    // fetch(`/appointments/${delid}`, {
+    // fetch(`/fruits/${delid}`, {
     //   method: 'DELETE',
     // });
   }
 
-  function handleBookingSubmit(e) {
+  function handleListingSubmit(e) {
     e.preventDefault();
     setErrors([]);
-    fetch('/appointments', {
+    fetch('/fruits', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        patient_id: user.id,
-        duration,
-        appointment_type: appointmentType,
-        practitioner_id: practitioner,
-        date,
-      }),
+        user_id: user.id,
+       
+        fruit_type: fruitType,
+        }),
     }).then((r) => {
       if (r.ok) {
         r.json().then((user) => {
@@ -60,11 +56,11 @@ function Appointment({ user }) {
   }
 
   return (
-    <div className='patient-me'>
-      <div className='patient-me-table'>
+    <div className='user-me'>
+      <div className='user-me-table'>
         <h1>Hi {user.name},</h1>
         <p>
-          See your booked appointments below. Refresh page if no records appear
+          See your listed fruits below. Refresh page if no fruits appear
           or if frozen.
         </p>
         <br />
@@ -73,27 +69,20 @@ function Appointment({ user }) {
           <tbody>
             <tr>
               <th>App ID</th>
-              <th>Practioner ID</th>
-              <th>Practitioner Name</th>
               <th>App Type</th>
-              <th>Date</th>
-              <th>Duartion</th>
               <th></th>
             </tr>
-            {/* {allAppointmentsLength < 1 ? (
+            {/* {allFruitsLength < 1 ? (
               <tr>
-                <td colSpan='7'>No Booked Sessions</td>
+                <td colSpan='7'>No Listed Fruits</td>
               </tr>
             ) : (  */}
 
-            {allAppointments?.map((app) => (
+            {allFruits?.map((app) => (
               <tr key={app.id}>
                 <td>{app.id}</td>
-                <td>{app.practitioner_id}</td>
-                <td>{app.practitioner_name}</td>
-                <td>{app.appointment_type}</td>
-                <td>{app.date}</td>
-                <td>{app.duration}</td>
+                <td>{app.fruit_type}</td>
+                
                 <td>
                   <Tooltip title='Delete' placement='right'>
                     <i
@@ -101,7 +90,7 @@ function Appointment({ user }) {
                       data-for='del'
                       id='ficon'
                       onClick={() => {
-                        // setRecord(app);
+                        // setList(app);
                         // handleDelete();
                       }}
                       class='fa-solid fa-trash'
@@ -116,46 +105,33 @@ function Appointment({ user }) {
         </table>
       </div>
 
-      <div className='patient-me-form'>
-        <h1>Book an Appointment</h1>
-        <form id='appointment-form' onSubmit={handleBookingSubmit}>
-          <label htmlFor='practitioner'>Select Practitioner</label>
+      <div className='user-me-form'>
+        <h1>List a fruit</h1>
+        <form id='fruit-form' onSubmit={handleListingSubmit}>
+          <label htmlFor='fruit'>Select fruit</label>
           <select
-            name='practitioner'
-            onChange={(e) => setPractitioner(e.target.value)}
-          >
+            name='fruit'
+            onChange={(e) => setFruit(e.target.value)}
+          />
             <option className='option' hidden>
-              Select Practitioner
+              Select Fruit
             </option>
-            {allPractitioners.map((prac) => {
+            {allFruits.map((prac) => {
               return (
-                <option value={prac.id} key={prac.id} className='option'>
-                  {prac.name}
+                <option value={fruit.id} key={fruit.id} className='option'>
+                  {fruit.name}
                 </option>
               );
             })}
-          </select>
-          <label htmlFor='duration'>Date</label>
-          <input
-            type='date'
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
-          <label htmlFor='duration'>Duration</label>
+         
+          <label htmlFor='Fruit Type'>Type of Fruit</label>
           <input
             type='text'
-            placeholder='e.g 1 hour'
-            value={duration}
-            onChange={(e) => setDuration(e.target.value)}
+            placeholder='e.g Listing'
+            value={fruitType}
+            onChange={(e) => setFruitType(e.target.value)}
           />
-          <label htmlFor='appointmentType'>Type of Appointment</label>
-          <input
-            type='text'
-            placeholder='e.g Consultation'
-            value={appointmentType}
-            onChange={(e) => setAppointmentType(e.target.value)}
-          />
-          <button type='submit'>BOOK</button>
+          <button type='submit'>LIST</button>
           {errors.map((err) => (
             <li style={{ color: 'red' }} key={err}>
               {err}
@@ -167,7 +143,7 @@ function Appointment({ user }) {
   );
 }
 
-export default Appointment;
+export default Fruit;
 
 // function handleDeleteClick() {
 //   fetch(`/toys/${id}`, {
