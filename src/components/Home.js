@@ -20,7 +20,7 @@ function Home() {
       </div>
       <div className='home-cont-2'>
         <div className='home-cont-2-img'>
-          <img src={url} alt='Fruits'/>
+          <img src="https://cdn.lifehack.org/wp-content/uploads/2014/06/Fruits-and-vegetables.jpg" alt='Fruits'/>
         </div>
         <div className='home-cont-2-text'>
           <h1>
@@ -37,7 +37,7 @@ function Home() {
       </div>
       <div className='home-cont-3'>
         <img
-          src={url}
+          src=" https://shwetainthekitchen.com/wp-content/uploads/2021/08/Fruit-Salad-with-Condensed-Milk.jpg"
           className='smoothie.jpeg'
           alt='Smoothie'
         />
@@ -53,7 +53,7 @@ function Home() {
         <br />
       </div>
       <div className='home-cont-4'>
-        <img src={url} alt='fruit in basket' />
+        <img src="https://www.lalpathlabs.com/blog/wp-content/uploads/2019/01/Fruits-and-Vegetables.jpg" alt='fruit in basket' />
         <div className='home-cont-4-text'>
           <h1>What are the benefits of drinking smothies?</h1>
           <br />
