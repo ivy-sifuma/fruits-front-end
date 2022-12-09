@@ -26,7 +26,7 @@ function App() {
   //   return (
   //     <>
   //       <NavBar user={user} setUser={setUser} />
-  //       <Appointment user={user} />
+  //       <Fruit user={user} />
   //       <NavLink to="/me" />
   //     </>
   //   );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
 
-// DELETE NOT WORKING CORRECTLY
+
 
 function Fruit({ user }) {
   const [allusers, setAllusers] = useState([]);
