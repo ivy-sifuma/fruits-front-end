@@ -9,16 +9,14 @@ function Home() {
     <div className='home'>
       <div className='home-banner'>
         <div className='home-banner-text'>
-          <h1>We Help Families Care for their Loved Ones</h1>
+          <h1>We Help Smoothie Lovers Keep The List </h1>
           <br />
           <p>
-            We Help Families Care for their Loved Ones iCare provides home
-            health care services and supports so that every person may live a
-            fulfilled life in their home and community regardless of disability.
+            We help smothie lovers keep track of types of fruits they have used in previous smoothies or upcoming smothies and also be able to note down fruits of smothie recipes tasted in events/partys .
           </p>
           <br />
           <Link to='/signup'>
-            <button type='button'>Register Patient</button>
+            <button type='button'>Register User</button>
           </Link>
         </div>
       </div>
@@ -28,14 +26,12 @@ function Home() {
         </div>
         <div className='home-cont-2-text'>
           <h1>
-            Learn How to Be Efficient in Providing Care for Your Loved One
+            Do not loose that smothie recipe
           </h1>
           <p>
             <br />
-            We believe the best care is delivered when it is delivered with
-            love. Who knows more about the nuances, preferences, and type of
-            care that should be provided to your loved one than a family member
-            or trusted friend?
+            I believe the best smothie is delivered when it is made with
+            love. Who knows more about smothies than smothie lovers or business owners.
           </p>
           <br />
           <button type='button'>Find out more</button>
@@ -48,15 +44,11 @@ function Home() {
           alt='Mother Child'
         />
         <h1>
-          iCare delivers home and community-based services that support
-          long-term independence
+          Fruits App helps you not miss on your fav smothie just because you lost that note pad, oopsy! 
         </h1>
         <br />
         <p>
-          We provide home health, nursing, personal care, and community-based
-          services as well as 24/7 backup services for nursing and in-home care.
-          Our experienced Intake Specialists and nurses are here to help
-          determine the best fit for your individual situation.
+          We provide the best of user experience in keeping smothie memories.
         </p>
         <button type='button'>Explore Our Services</button>
         <br />
@@ -65,30 +57,13 @@ function Home() {
       <div className='home-cont-4'>
         <img src={momChild} alt='mom and child' />
         <div className='home-cont-4-text'>
-          <h1>How do you Care For Someone with Cerebral Palsy?</h1>
+          <h1>What are the benefits of drinking smothies?</h1>
           <br />
           <p className='home-cont-4-text-p'>
-            Cerebral palsy (CP) is the most common childhood disability. In the
-            United States, about 764,000 people currently have this condition.
-            While some exhibit only a few symptoms, others need assistance with
-            basic activities like walking and eating. Depending on the severity
-            of the condition, caring for someone with cerebral palsy can be
-            complicated. Since CP affects motor skills, you may need to help the
-            inpidual walk, go to the bathroom, eat, and dress.{' '}
+          Smoothies are thick, creamy beverages usually blended from puréed fruits, vegetables, juices, yogurt, nuts, seeds, and/or dairy or nondairy milk. The most basic smoothie starts with two essential ingredients — a base and a liquid. From there, you can combine ingredients to your liking. {' '}
           </p>
           <p className='home-cont-4-text-p'>
-            Let’s take a closer look at what cerebral palsy is and what caring
-            for an individual with this condition entails. It’s important to
-            understand that cerebral palsy isn’t a disease. It’s a condition
-            that affects areas of an individual’s brain that are responsible for
-            movement. CP occurs due to abnormal brain development or an injury
-            to a developing brain. Brain damage usually happens before birth.
-            However, it can also occur during the first years of the child’s
-            life. While cerebral palsy isn’t a genetic condition, research shows
-            that some hereditary factors can put an individual at risk of
-            developing it. Different types of cerebral palsy exist. They are
-            classified based on the main type of movement disorder affecting the
-            individual. Read more...
+            Smothies ncreases consumption of fruits and vegetables, Increases fiber intake, Can provide a nutritional balance of fats, protein, carbohydrates, vitamins, and minerals and lastly Helps manage food cravings.
           </p>
         </div>
 
