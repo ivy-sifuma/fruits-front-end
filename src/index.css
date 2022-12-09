@@ -1,13 +1,292 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+ font-family: 'Open Sans', sans-serif;
+ margin: 0;
 }
+/* ==SIGNUP== */
+.signup{
+ width: 70vh;
+ height: 80vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 6vh;
+ box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+ margin-left: auto;
+ margin-right: auto;
+}
+.signup h1{
+ margin-bottom: 30px;
+}
+#signup-form{
+ display: flex;
+ flex-direction: column;
+ width: 50vh;
+}
+label {
+ font-size: 18px;
+ font-weight: 600;
+ padding: 12px 0 4px 0;
+}
+input {
+ border: 1px solid lightgray;
+ padding: 7px;
+ border-radius: 5px;
+}
+textarea {
+ border: 1px solid lightgray;
+ padding: 7px;
+ border-radius: 5px;
+}
+button {
+ width: fit-content;
+ padding: 6px 18px;
+ font-size: 16px;
+ margin: 20px 0;
+ background-color: #007786;
+ border: 1px solid #007786;
+ border-radius: 5px;
+ color: white;
+}
+button:hover {
+ cursor: pointer;
+ filter: brightness(90%);
+ transition: all 0.35s ease-in-out;
+}
+select {
+ border: 1px solid lightgray;
+ padding: 7px;
+ border-radius: 5px;
+}
+.already {
+ width: 50vh;
+}
+.already p {
+ padding-top: 12px;
+}
+/* ==SIGNUP== */
+/* ==LOGIN== */
+.login{
+ width: 70vh;
+ height: 50vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 6vh;
+ box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+ margin-left: auto;
+ margin-right: auto;
+}
+.login h1{
+ margin-bottom: 30px;
+}
+#login-form{
+ display: flex;
+ flex-direction: column;
+ width: 50vh;
+}
+/* ==LOGIN== */
+/* ==NAVBAR== */
+header {
+ display: flex;
+ justify-content: center;
+ background-color: #007786;
+ box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+nav {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ width: 80%;
+}
+.logo {
+ text-decoration: none;
+ color: white;
+ font-size: 36px;
+ font-weight: 700;
+ /* margin-left: 1rem; */
+}
+.i-logo {
+ color: black;
+}
+.nav-menu {
+ width: 60px;
+ text-align: center;
+ font-size: 1rem;
+ display: inline-block;
+ background-color: transparent;
+ border: 1px solid white;
+ margin: 1rem;
+ padding: 1rem;
+ text-decoration: none;
+ color: white;
+ cursor: pointer;
+}
+.nav-menu:hover{
+ background-color: white;
+ color: #007786;
+ transition: all 0.35s ease-in-out;
+}
+/* ==NAVBAR== */
+/* ==HOME== */
+.home {
+ width: 100%;
+}
+.home-banner {
+ width: 100%;
+ background-image: url("./img/image.webp");
+ color: white;
+ overflow: hidden;
+ background-position: center center;
+ background-size: cover;
+ height: 70vh;
+}
+.home-banner-text {
+ color: white;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ height: 70vh;
+ margin: auto;
+ text-align: center;
+}
+.home-banner-text h1 {
+ font-size: 50px;
+}
+.home-banner-text p {
+ font-size: 20px;
+ width: 70%;
+}
+.home-banner-text button {
+ font-size: 20px;
+ padding: 10px 30px;
+}
+.home-banner-text button:hover {
+ background-color: transparent;
+ transition: all 0.35s ease-in-out;
+}
+.home-cont-2 {
+ width: 70%;
+ display: flex;
+ margin: 15vh auto;
+ align-items: center;
+ justify-content: space-between;
+}
+.home-cont-2-img {
+ width: 50%;
+}
+.home-cont-2-img img {
+ width: 100%;
+ border-radius: 50px;
+  background-position: center center;
+ background-size: contain;
+}
+.home-cont-2-text {
+ width: 40%;
+}
+.home-cont-2-text h1 {
+ font-size: 35px;
+}
+.home-cont-2-text p {
+ font-size: 16px;
+}
+.mother-children-img {
+ width: 100%;
+ display: flex;
+ margin: auto;
+ padding-bottom: 40px;
+}
+.home-cont-3 {
+ width: 70%;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ margin: auto;
+ background-color: #007786;
+ color: white;
+ align-items: center;
+}
+.home-cont-3 h1 {
+ font-size: 36px;
+ padding: 0 60px;
+}
+.home-cont-3 p {
+ padding: 30px 60px;
+ font-size: 20px;
+}
+.home-cont-3 button {
+ border: white 1px solid;
+ padding: 10px 20px;
+}
+.home-cont-3 button:hover {
+ background-color: white;
+ color: #007786;
+}
+.home-cont-4 {
+ width: 70%;
+ /* display: flex; */
+ position: relative;
+ margin: 15vh auto;
+}
+.home-cont-4 img {
+ width: 50vh;
+ height: fit-content;
+ padding:  0 7vh 4vh 0;
+ float: left;
+}
+.home-cont-4-text h1{
+ line-height: 55px;
+}
+.home-cont-4-text-p {
+ line-height: 36px;
+}
+/* ==HOME== */
+/* ==PATIENT-ME== */
+.patient-me {
+ width: 70%;
+ display: flex;
+ flex-direction: column;
+ margin: 100px auto;
+ justify-content: center;
+}
+.patient-me-table {
+ height: auto;
+ margin-bottom: 40px;
+}
+table{
+ text-align: center;
+ border-collapse: collapse;
+ width: 100%;
+}
+td, th {
+ border: 1px solid #007786;
+ padding: 10px ;
+}
+.patient-me-form {
+ margin-top: 40px;
+}
+.patient-me-form {
+ 
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+#appointment-form{
+ display: flex;
+ flex-direction: column;
+ width: 50vh;
+}
+#appointment-form button:hover {
+ background-color: white;
+ color: #007786;
+}
+i {
+	color: #FFCCCB; 
+ cursor: pointer;
+};
+/* ==PATIENT-ME== */
