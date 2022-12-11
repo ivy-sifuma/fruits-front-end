@@ -45,8 +45,8 @@ button {
  padding: 6px 18px;
  font-size: 16px;
  margin: 20px 0;
- background-color: #007786;
- border: 1px solid #007786;
+ background-color: black;
+ border: 1px solid black;
  border-radius: 5px;
  color: white;
 }
@@ -93,7 +93,7 @@ select {
 header {
  display: flex;
  justify-content: center;
- background-color: #007786;
+ background-color: #FFFF00;
  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 nav {
@@ -105,7 +105,7 @@ nav {
 }
 .logo {
  text-decoration: none;
- color: white;
+ color: black;
  font-size: 36px;
  font-weight: 700;
  /* margin-left: 1rem; */
@@ -208,7 +208,7 @@ nav {
  flex-direction: column;
  margin: auto;
  background-color: #FFFF00;
- color: white;
+ color: black;
  align-items: center;
 }
 .home-cont-3 h1 {
@@ -282,7 +282,7 @@ td, th {
  width: 50vh;
 }
 #fruit-form button:hover {
- background-color: white;
+ background-color: black;
  color: #FFFF00;
 }
 i {
