@@ -128,7 +128,7 @@ nav {
 }
 .nav-menu:hover{
  background-color: white;
- color: #007786;
+ color: #FFFF00;
  transition: all 0.35s ease-in-out;
 }
 /* ==NAVBAR== */
@@ -207,7 +207,7 @@ nav {
  display: flex;
  flex-direction: column;
  margin: auto;
- background-color: #007786;
+ background-color: #FFFF00;
  color: white;
  align-items: center;
 }
@@ -225,7 +225,7 @@ nav {
 }
 .home-cont-3 button:hover {
  background-color: white;
- color: #007786;
+ color: #FFFF00;
 }
 .home-cont-4 {
  width: 70%;
@@ -264,7 +264,7 @@ table{
  width: 100%;
 }
 td, th {
- border: 1px solid #007786;
+ border: 1px solid #FFFF00;
  padding: 10px ;
 }
 .user-me-form {
@@ -283,7 +283,7 @@ td, th {
 }
 #fruit-form button:hover {
  background-color: white;
- color: #007786;
+ color: #FFFF00;
 }
 i {
 	color: #FFCCCB; 
