@@ -27,7 +27,7 @@ function NavBar({ user, setUser }) {
                 to='/me'
                 style={{width: "max-content"}}
               >
-                Appointments
+                Fruits
               </NavLink>
               <NavLink
                 className='nav-menu'
