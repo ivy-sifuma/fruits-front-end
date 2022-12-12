@@ -32,7 +32,7 @@ function Home() {
             love. Who knows more about smothies than smothie lovers or business owners.
           </p>
           <br />
-          <button type='button'>Find out more</button>
+          
         </div>
       </div>
       <div className='home-cont-3'>
@@ -48,9 +48,7 @@ function Home() {
         <p>
           We provide the best of user experience in keeping smothie memories.
         </p>
-        <button type='button'>Explore Our Services</button>
-        <br />
-        <br />
+       
       </div>
       <div className='home-cont-4'>
         <img src="https://www.lalpathlabs.com/blog/wp-content/uploads/2019/01/Fruits-and-Vegetables.jpg" alt='fruit in basket' />
