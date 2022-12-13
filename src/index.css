@@ -275,6 +275,7 @@ td, th {
  display: flex;
  align-items: center;
  flex-direction: column;
+ 
 }
 #fruit-form{
  display: flex;
