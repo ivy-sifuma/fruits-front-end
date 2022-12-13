@@ -111,15 +111,15 @@ function Fruit({ user }) {
           <label htmlFor='fruit'>Select fruit</label>
           <select
             name='fruit'
-            onChange={(e) => setFruit(e.target.value)}
+            onChange={(e) =>Fruit(e.target.value)}
           />
             <option className='option' hidden>
               Select Fruit
             </option>
             {allFruits.map((prac) => {
               return (
-                <option value={fruit.id} key={fruit.id} className='option'>
-                  {fruit.name}
+                <option value={Fruit.type} key={Fruit.type} className='option'>
+                  {Fruit.type}
                 </option>
               );
             })}
