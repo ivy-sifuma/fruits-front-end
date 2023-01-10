@@ -7,10 +7,11 @@ function Home() {
     <div className='home'>
       <div className='home-banner'>
         <div className='home-banner-text'>
-          <h1>We Help Smoothie Lovers Keep The List </h1>
+       
+          <h1>We Help keep that inventory </h1>
           <br />
           <p>
-            We help smothie lovers keep track of types of fruits they have used in previous smoothies or upcoming smothies and also be able to note down fruits of smothie recipes tasted in events/partys .
+            We help businesses have all sales record.
           </p>
           <br />
           <Link to='/signup'>
@@ -20,16 +21,16 @@ function Home() {
       </div>
       <div className='home-cont-2'>
         <div className='home-cont-2-img'>
-          <img src="https://cdn.lifehack.org/wp-content/uploads/2014/06/Fruits-and-vegetables.jpg" alt='Fruits'/>
+          <img src="https://static.vecteezy.com/system/resources/previews/005/607/208/original/meat-and-meat-products-color-set-simple-design-on-brown-background-flat-style-cartoon-illustration-free-vector.jpg" alt='Products'/>
         </div>
         <div className='home-cont-2-text'>
           <h1>
-            Do not loose that smothie recipe
+            Let's keep our records
           </h1>
           <p>
             <br />
-            I believe the best smothie is delivered when it is made with
-            love. Who knows more about smothies than smothie lovers or business owners.
+            To serve you with fresh and fleshy meat products as you desire
+            
           </p>
           <br />
           
@@ -37,29 +38,29 @@ function Home() {
       </div>
       <div className='home-cont-3'>
         <img
-          src=" https://shwetainthekitchen.com/wp-content/uploads/2021/08/Fruit-Salad-with-Condensed-Milk.jpg"
-          className='smoothie.jpeg'
-          alt='Smoothie'
+          src=" https://media.istockphoto.com/id/515815838/photo/middle-aged-butcher-serving-customer.jpg?s=612x612&w=0&k=20&c=bW2I3TrAp8nNE8Y2kGkHNS9Yzrk3uDNvSY-4fd7cyHw="
+          className='Meaty.jpeg'
+          alt='Meaty'
         />
         <h1>
-          Fruits App helps you not miss on your fav smothie just because you lost that note pad, oopsy! 
+          Danny-Kam web App is here to help keep all sales records in the easiest, fastest and safest way allowing you keep track of records. 
         </h1>
         <br />
         <p>
-          We provide the best of user experience in keeping smothie memories.
+          
         </p>
        
       </div>
       <div className='home-cont-4'>
-        <img src="https://www.lalpathlabs.com/blog/wp-content/uploads/2019/01/Fruits-and-Vegetables.jpg" alt='fruit in basket' />
+        <img src="https://img.freepik.com/premium-vector/vector-illustration-logo-butcher-shop-with-bearded-butchers-work_132292-17.jpg?w=2000" alt='chicken breast' />
         <div className='home-cont-4-text'>
-          <h1>What are the benefits of drinking smothies?</h1>
+          <h1>What are the benefits of inventory system?</h1>
           <br />
           <p className='home-cont-4-text-p'>
-          Smoothies are thick, creamy beverages usually blended from puréed fruits, vegetables, juices, yogurt, nuts, seeds, and/or dairy or nondairy milk. The most basic smoothie starts with two essential ingredients — a base and a liquid. From there, you can combine ingredients to your liking. {' '}
+          This helps a company manage it's stock, fill orders and track the overall production or sales {' '}
           </p>
           <p className='home-cont-4-text-p'>
-            Smothies increases consumption of fruits and vegetables, Increases fiber intake, Can provide a nutritional balance of fats, protein, carbohydrates, vitamins, and minerals and lastly Helps manage food cravings.
+          The practice identifies and responds to trends to ensure there's always enough stock to fulfill customer orders and proper warning of a shortage.
           </p>
         </div>
 

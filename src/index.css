@@ -93,7 +93,7 @@ select {
 header {
  display: flex;
  justify-content: center;
- background-color: #FFFF00;
+ background-color: #CF0A0A;
  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 nav {
@@ -128,7 +128,7 @@ nav {
 }
 .nav-menu:hover{
  background-color: white;
- color: #FFFF00;
+ color: CF0A0A;
  transition: all 0.35s ease-in-out;
 }
 /* ==NAVBAR== */
@@ -138,7 +138,7 @@ nav {
 }
 .home-banner {
  width: 100%;
- background-image: url("https://shwetainthekitchen.com/wp-content/uploads/2021/08/Fruit-Salad-with-Condensed-Milk.jpg");
+ background-image: url("https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2F9f5919ccf66f61826d0e476ceed28e619b54378f");
  color: white;
  overflow: hidden;
  background-position: center center;
@@ -146,7 +146,7 @@ nav {
  height: 70vh;
 }
 .home-banner-text {
- color: white;
+ color: #000000;
  display: flex;
  justify-content: center;
  flex-direction: column;
@@ -207,7 +207,7 @@ nav {
  display: flex;
  flex-direction: column;
  margin: auto;
- background-color: #FFFF00;
+ background-color: 1A0000;
  color: black;
  align-items: center;
 }
@@ -225,7 +225,7 @@ nav {
 }
 .home-cont-3 button:hover {
  background-color: white;
- color: #FFFF00;
+ color: 1A0000;
 }
 .home-cont-4 {
  width: 70%;
@@ -284,7 +284,7 @@ td, th {
 }
 #fruit-form button:hover {
  background-color: black;
- color: #FFFF00;
+ color: CF0A0A;
 }
 i {
 	color: #FFCCCB; 

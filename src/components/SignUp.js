@@ -44,12 +44,13 @@ function SignUp({ onLogin }) {
       
   }, []);
 
-  if (success == !null) return <NavLink to='/me' />;
+  if (success === !null) return <NavLink to='/me' />;
 
   return (
     <div className='signup'>
       <h1>Signup</h1>
       <form id='signup-form' onSubmit={handleSubmit}>
+      
         <label htmlFor='name'>Username</label>
         <input
           type='text'

@@ -16,7 +16,7 @@ function NavBar({ user, setUser }) {
       <nav>
         <div>
           <Link className='logo' to='/'>
-            <span className='f-logo'>Smoothie</span>Fruity
+            <span className='d-logo'>Danny</span>Kam
           </Link>
         </div>
         <div>
@@ -27,7 +27,7 @@ function NavBar({ user, setUser }) {
                 to='/me'
                 style={{width: "max-content"}}
               >
-                Fruits
+                Products
               </NavLink>
               <NavLink
                 className='nav-menu'
